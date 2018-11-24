@@ -44,6 +44,8 @@ go
 --/////////////////////////////////////////////////////////////////////////////////////////////////////
 --actualizar los datos segun la longitud de la socilitud de cambio
 -----------CODCLI----------------------------------------------
+drop trigger movimiento.afterInsertUpdateCabezera
+go
 update catalogo.cliente set codcli = 'C00001' where codCli='c01'
 go
 update catalogo.cliente set codcli = 'C00002' where codCli='c02'
